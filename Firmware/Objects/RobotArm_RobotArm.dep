@@ -1,0 +1,27 @@
+Dependencies for Project 'RobotArm', Target 'RobotArm': (DO NOT MODIFY !)
+F (.\CMSIS\inc\core_cm4.h)(0x54EF3BAD)()
+F (.\CMSIS\inc\core_cmFunc.h)(0x54EF3BAD)()
+F (.\CMSIS\inc\core_cmInstr.h)(0x54EF3BAD)()
+F (.\CMSIS\inc\core_cmSimd.h)(0x54EF3BAE)()
+F (.\CMSIS\inc\stm32f30x.h)(0x5A0A9C7D)()
+F (.\CMSIS\inc\system_stm32f30x.h)(0x54F07C4E)()
+F (.\Startup\startup_stm32f303xc.s)(0x54F07C4E)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 520" --pd "STM32F303xC SETA 1"--list .\listings\startup_stm32f303xc.lst --xref -o .\objects\startup_stm32f303xc.o --depend .\objects\startup_stm32f303xc.d)
+F (.\UserSource\src\led.c)(0x5CA5924B)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\Startup -I .\UserSource -I .\UserSource\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F303xC-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (.\UserSource\inc\led.h)(0x5CA5912E)
+I (.\CMSIS\inc\stm32f30x.h)(0x5A0A9C7D)
+I (.\CMSIS\inc\core_cm4.h)(0x54EF3BAD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
+I (.\CMSIS\inc\core_cmInstr.h)(0x54EF3BAD)
+I (.\CMSIS\inc\core_cmFunc.h)(0x54EF3BAD)
+I (.\CMSIS\inc\core_cmSimd.h)(0x54EF3BAE)
+I (.\CMSIS\inc\system_stm32f30x.h)(0x54F07C4E)
+F (.\UserSource\src\main.c)(0x5CA59265)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\Startup -I .\UserSource -I .\UserSource\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F303xC-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\UserSource\inc\main.h)(0x5CA59153)
+I (.\CMSIS\inc\stm32f30x.h)(0x5A0A9C7D)
+I (.\CMSIS\inc\core_cm4.h)(0x54EF3BAD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
+I (.\CMSIS\inc\core_cmInstr.h)(0x54EF3BAD)
+I (.\CMSIS\inc\core_cmFunc.h)(0x54EF3BAD)
+I (.\CMSIS\inc\core_cmSimd.h)(0x54EF3BAE)
+I (.\CMSIS\inc\system_stm32f30x.h)(0x54F07C4E)
+I (.\UserSource\inc\led.h)(0x5CA5912E)
