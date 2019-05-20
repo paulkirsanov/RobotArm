@@ -1,7 +1,17 @@
---cpu Cortex-M4.fp
-".\objects\startup_stm32f303xc.o"
+--cpu Cortex-M3
+".\objects\core_cm3.o"
+".\objects\system_stm32f10x.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\button.o"
+".\objects\delay_tim4.o"
+".\objects\i2c.o"
+".\objects\lcd.o"
 ".\objects\led.o"
 ".\objects\main.o"
+".\objects\spi.o"
+".\objects\stepmotor.o"
+".\objects\timer.o"
+".\objects\usart.o"
 --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\RobotArm.map" -o .\Objects\RobotArm.axf

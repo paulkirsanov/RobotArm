@@ -13,16 +13,16 @@
       <pCCUsed>5060183::V5.06 update 2 (build 183)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
-          <Device>STM32F303VCTx</Device>
+          <Device>STM32F103C8</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F3xx_DFP.2.1.0</PackID>
+          <PackID>Keil.STM32F1xx_DFP.2.3.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
-          <Cpu>IRAM(0x20000000,0x0000C000) IRAM2(0x10000000,0x00002000) IROM(0x08000000,0x00040000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE</Cpu>
+          <Cpu>IRAM(0x20000000,0x00005000) IROM(0x08000000,0x00010000) CPUTYPE("Cortex-M3") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
-          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F3xx_256 -FS08000000 -FL040000 -FP0($$Device:STM32F303VCTx$CMSIS\Flash\STM32F3xx_256.FLM))</FlashDriverDll>
+          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F10x_128 -FS08000000 -FL020000 -FP0($$Device:STM32F103C8$Flash\STM32F10x_128.FLM))</FlashDriverDll>
           <DeviceId>0</DeviceId>
-          <RegisterFile>$$Device:STM32F303VCTx$Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h</RegisterFile>
+          <RegisterFile>$$Device:STM32F103C8$Device\Include\stm32f10x.h</RegisterFile>
           <MemoryEnv></MemoryEnv>
           <Cmp></Cmp>
           <Asm></Asm>
@@ -32,7 +32,7 @@
           <SLE66CMisc></SLE66CMisc>
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
-          <SFDFile>$$Device:STM32F303VCTx$CMSIS\SVD\STM32F30x.svd</SFDFile>
+          <SFDFile>$$Device:STM32F103C8$SVD\STM32F103xx.svd</SFDFile>
           <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
@@ -109,13 +109,13 @@
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
-          <SimDllArguments> -REMAP -MPU</SimDllArguments>
+          <SimDllArguments> -REMAP</SimDllArguments>
           <SimDlgDll>DCM.DLL</SimDlgDll>
-          <SimDlgDllArguments>-pCM4</SimDlgDllArguments>
+          <SimDlgDllArguments>-pCM3</SimDlgDllArguments>
           <TargetDllName>SARMCM3.DLL</TargetDllName>
-          <TargetDllArguments> -MPU</TargetDllArguments>
+          <TargetDllArguments></TargetDllArguments>
           <TargetDlgDll>TCM.DLL</TargetDlgDll>
-          <TargetDlgDllArguments>-pCM4</TargetDlgDllArguments>
+          <TargetDlgDllArguments>-pCM3</TargetDlgDllArguments>
         </DllOption>
         <DebugOption>
           <OPTHX>
@@ -173,7 +173,7 @@
             <AdsLsxf>1</AdsLsxf>
             <RvctClst>0</RvctClst>
             <GenPPlst>0</GenPPlst>
-            <AdsCpuType>"Cortex-M4"</AdsCpuType>
+            <AdsCpuType>"Cortex-M3"</AdsCpuType>
             <RvctDeviceName></RvctDeviceName>
             <mOS>0</mOS>
             <uocRom>0</uocRom>
@@ -182,8 +182,8 @@
             <hadIRAM>1</hadIRAM>
             <hadXRAM>0</hadXRAM>
             <uocXRam>0</uocXRam>
-            <RvdsVP>2</RvdsVP>
-            <hadIRAM2>1</hadIRAM2>
+            <RvdsVP>0</RvdsVP>
+            <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
             <useUlib>0</useUlib>
@@ -243,12 +243,12 @@
               <IRAM>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0xc000</Size>
+                <Size>0x5000</Size>
               </IRAM>
               <IROM>
                 <Type>1</Type>
                 <StartAddress>0x8000000</StartAddress>
-                <Size>0x40000</Size>
+                <Size>0x10000</Size>
               </IROM>
               <XRAM>
                 <Type>0</Type>
@@ -273,7 +273,7 @@
               <OCR_RVCT4>
                 <Type>1</Type>
                 <StartAddress>0x8000000</StartAddress>
-                <Size>0x40000</Size>
+                <Size>0x10000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
                 <Type>1</Type>
@@ -298,12 +298,12 @@
               <OCR_RVCT9>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0xc000</Size>
+                <Size>0x5000</Size>
               </OCR_RVCT9>
               <OCR_RVCT10>
                 <Type>0</Type>
-                <StartAddress>0x10000000</StartAddress>
-                <Size>0x2000</Size>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
               </OCR_RVCT10>
             </OnChipMemories>
             <RvctStartVector></RvctStartVector>
@@ -334,7 +334,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\Firmware;.\CMSIS;.\CMSIS\inc;.\Startup;.\UserSource;.\UserSource\inc</IncludePath>
+              <IncludePath>..\Firmware;.\CMSIS;.\CMSIS\inc;.\CMSIS\src;.\Startup;.\UserSource;.\UserSource\inc;..\Firmware</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -378,34 +378,14 @@
           <GroupName>CMSIS</GroupName>
           <Files>
             <File>
-              <FileName>core_cm4.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\CMSIS\inc\core_cm4.h</FilePath>
+              <FileName>core_cm3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\CMSIS\src\core_cm3.c</FilePath>
             </File>
             <File>
-              <FileName>core_cmFunc.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\CMSIS\inc\core_cmFunc.h</FilePath>
-            </File>
-            <File>
-              <FileName>core_cmInstr.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\CMSIS\inc\core_cmInstr.h</FilePath>
-            </File>
-            <File>
-              <FileName>core_cmSimd.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\CMSIS\inc\core_cmSimd.h</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f30x.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\CMSIS\inc\stm32f30x.h</FilePath>
-            </File>
-            <File>
-              <FileName>system_stm32f30x.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\CMSIS\inc\system_stm32f30x.h</FilePath>
+              <FileName>system_stm32f10x.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\CMSIS\src\system_stm32f10x.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -413,15 +393,35 @@
           <GroupName>StartUp</GroupName>
           <Files>
             <File>
-              <FileName>startup_stm32f303xc.s</FileName>
+              <FileName>startup_stm32f10x_md.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\Startup\startup_stm32f303xc.s</FilePath>
+              <FilePath>.\Startup\startup_stm32f10x_md.s</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
           <GroupName>UserSource</GroupName>
           <Files>
+            <File>
+              <FileName>button.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\UserSource\src\button.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay_tim4.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\UserSource\src\delay_tim4.c</FilePath>
+            </File>
+            <File>
+              <FileName>i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\UserSource\src\i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\UserSource\src\lcd.c</FilePath>
+            </File>
             <File>
               <FileName>led.c</FileName>
               <FileType>1</FileType>
@@ -431,6 +431,26 @@
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\UserSource\src\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\UserSource\src\spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stepmotor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\UserSource\src\stepmotor.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\UserSource\src\timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\UserSource\src\usart.c</FilePath>
             </File>
           </Files>
         </Group>
