@@ -10,6 +10,7 @@
 #include "i2c.h"
 #include "lcd.h"
 #include "stepmotor.h"
+#include "button.h"
 
 #define 	RX_BUFFER_SIZE	8
 

@@ -1,5 +1,7 @@
 #include "stepmotor.h"
 
+uint32_t max_position = 500;
+
 void stepmotor_init(void)
 {
 	RCC->APB2ENR |= RCC_APB2ENR_IOPAEN | RCC_APB2ENR_IOPBEN;
@@ -75,15 +77,37 @@ void step(void)
 	GPIOA->BSRR |= GPIO_BSRR_BR8;
 }
 
-void set_step(uint32_t number, Direction direction, uint16_t speed)
+void set_step(uint32_t number, Direction direction, uint16_t speed, uint32_t *current_position)
 {
 	uint32_t i = 0;
-	enable();
-	set_direction(direction);
-	for(i = 0; i < number; i++)
+	if(number < (max_position - *current_position))
 	{
-		step();
-		delay_ms(speed);
+		enable();
+		set_direction(direction);
+		for(i = 0; i < number; i++)
+		{
+			step();
+			delay_ms(speed);
+		}
+	}
+	if(direction == CCW)
+	{
+		current_position += number;
+	}
+	else if((direction == CW) && (current_position - number > 0))
+	{
+		current_position -= number;
 	}
 	//disable();
+}
+
+void set_start_position(void)
+{
+	set_direction(CW);
+	set_resolution(0x48);
+	while((GPIOB->IDR & GPIO_IDR_IDR6) != 0)
+	{
+		step();
+		delay_ms(1);
+	}
 }

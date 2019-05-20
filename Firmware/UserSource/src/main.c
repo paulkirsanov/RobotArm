@@ -14,6 +14,7 @@ uint8_t x = 0;
 Direction dir_stepper = CW;
 uint16_t step_number_stepper = 0;
 uint16_t speed_stepper = 0;
+uint32_t current_position = 0;
 
 void RCC_Init(void);
 
@@ -87,7 +88,7 @@ void TIM2_IRQHandler(void)
 			
 			if((int)buffer_rx[7] == 0xE0)
 			{
-				set_step(step_number_stepper, dir_stepper, speed_stepper);
+				set_step(step_number_stepper, dir_stepper, speed_stepper, &current_position);
 			}
 			
 			for(x = 0; x < 8; x++)
@@ -125,10 +126,12 @@ int main(void)
 	RCC_Init();
 	delay_tim4_init();
 	led_init();
+	button_init();
 	usart2_init();
 	timer2_init();
 	timer3_init();
 	stepmotor_init();
+	set_start_position();
 	
 	while(1)
 	{

@@ -12,3 +12,4 @@
 .\objects\main.o: .\UserSource\inc\i2c.h
 .\objects\main.o: .\UserSource\inc\lcd.h
 .\objects\main.o: .\UserSource\inc\stepmotor.h
+.\objects\main.o: .\UserSource\inc\button.h

@@ -40,8 +40,8 @@ I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 I (.\UserSource\inc\delay_tim4.h)(0x58F7232E)
-F (.\UserSource\src\main.c)(0x5CDBAB0A)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (.\UserSource\inc\main.h)(0x5CDAB5E3)
+F (.\UserSource\src\main.c)(0x5CE2A057)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\UserSource\inc\main.h)(0x5CE25FE4)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
@@ -53,15 +53,16 @@ I (.\UserSource\inc\usart.h)(0x5C89EB87)
 I (.\UserSource\inc\timer.h)(0x5CC437F6)
 I (.\UserSource\inc\i2c.h)(0x5C921B6D)
 I (.\UserSource\inc\lcd.h)(0x5B6C3FF4)
-I (.\UserSource\inc\stepmotor.h)(0x5CD17E84)
+I (.\UserSource\inc\stepmotor.h)(0x5CE2A038)
+I (.\UserSource\inc\button.h)(0x5CA2F83E)
 F (.\UserSource\src\spi.c)(0x5C8B66D6)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
 I (.\UserSource\inc\spi.h)(0x5C8B6986)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
-F (.\UserSource\src\stepmotor.c)(0x5CD29A8C)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\stepmotor.o --omf_browse .\objects\stepmotor.crf --depend .\objects\stepmotor.d)
-I (.\UserSource\inc\stepmotor.h)(0x5CD17E84)
+F (.\UserSource\src\stepmotor.c)(0x5CE2A8FE)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\stepmotor.o --omf_browse .\objects\stepmotor.crf --depend .\objects\stepmotor.d)
+I (.\UserSource\inc\stepmotor.h)(0x5CE2A038)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
