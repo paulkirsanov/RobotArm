@@ -17,7 +17,7 @@ void i2c1_init(void)
   I2C1->CR2 |= 18;   						// Znachenie PCLK1 [MHz]
 	I2C1->CCR &= ~I2C_CCR_CCR;
 	I2C1->CCR |= 90;							// F = PCLK1/CCR/2
-  I2C1->TRISE = 9;							//RISING TIME 1000ns
+  I2C1->TRISE = 19;							//RISING TIME 1000ns
 	
 	I2C1->CR1 |= I2C_CR1_PE;
 	while((I2C1->CR1 & I2C_CR1_PE) == 0);
@@ -37,10 +37,10 @@ void i2c2_init(void)
 	I2C2->CR1 = 0;
 	
 	I2C2->CR2 &= ~I2C_CR2_FREQ;
-  I2C2->CR2 |= 18;   						// Znachenie PCLK1 [MHz]
-	I2C2->CCR &= ~I2C_CCR_CCR;
+  I2C2->CR2 |= 18;   						// PCLK1 [MHz]
+	I2C2->CCR &= ~(I2C_CCR_CCR | I2C_CCR_DUTY);
 	I2C2->CCR |= 90;							// F = PCLK1/CCR/2
-  I2C2->TRISE = 9;							//RISING TIME 1000ns
+  I2C2->TRISE = 19;							//RISING TIME 1000ns
 	
 	I2C2->CR1 |= I2C_CR1_PE;
 	while((I2C2->CR1 & I2C_CR1_PE) == 0);

@@ -5,7 +5,7 @@ uint8_t buf[1] = {0};
 char str1[100];
 uint8_t portlcd;
 
-void LCD_WriteByteI2CLCD(uint8_t bt)
+void lcd_writebytei2clcd(uint8_t bt)
 {
 	buf[0] = bt;
 	i2c_startTransmission(I2C2, 0x4E);
@@ -18,7 +18,7 @@ void sendhalfbyte(uint8_t c)
 	e_set();
 	delay_us(50);
 	portlcd &= ~0xF0;
-	LCD_WriteByteI2CLCD(portlcd |= c);
+	lcd_writebytei2clcd(portlcd |= c);
 	e_reset();
 	delay_us(50);
 }
@@ -33,18 +33,18 @@ void sendbyte(uint8_t c, uint8_t mode)
 	sendhalfbyte(c);
 }
 
-void LCD_Clear(void)
+void lcd_clear(void)
 {
 	sendbyte(0x01, 0);
 	delay_ms(2);
 }
 
-void LCD_SendChar(char ch)
+void lcd_sendchar(char ch)
 {
 	sendbyte(ch, 1);
 }
 
-void LCD_String(char* st)
+void lcd_string(char* st)
 {
 	uint8_t i = 0;
 	while(st[i] != 0)
@@ -54,7 +54,7 @@ void LCD_String(char* st)
 	}
 }
 
-void LCD_SetPos(uint8_t x, uint8_t y)
+void lcd_setpos(uint8_t x, uint8_t y)
 {
 	switch(y)
 	{
@@ -90,14 +90,14 @@ void lcd_init(void)
 	setwrite();
 }
 
-void LCD_Dot(uint8_t x, uint8_t y)
+void lcd_dot(uint8_t x, uint8_t y)
 {
 	uint8_t i = 0;
 	delay_ms(500);
 	for(i = 0; i < 3; i++)
 	{
-		LCD_SetPos(x + i, y);
-		LCD_SendChar(0x2E);
+		lcd_setpos(x + i, y);
+		lcd_sendchar(0x2E);
 		delay_ms(500);
 	}
 }

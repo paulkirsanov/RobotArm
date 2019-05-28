@@ -89,6 +89,10 @@ void TIM2_IRQHandler(void)
 			if((int)buffer_rx[7] == 0xE0)
 			{
 				set_step(step_number_stepper, dir_stepper, speed_stepper, &current_position);
+				
+				sprintf(str, "%d", current_position);
+				lcd_setpos(0, 1);
+				lcd_string(str);
 			}
 			
 			for(x = 0; x < 8; x++)
@@ -126,12 +130,19 @@ int main(void)
 	RCC_Init();
 	delay_tim4_init();
 	led_init();
+	
+	i2c2_init();
+	lcd_init();
+	lcd_clear();
+	lcd_setpos(0, 0);
+	lcd_string("stm32");
 	button_init();
 	usart2_init();
 	timer2_init();
 	timer3_init();
+
 	stepmotor_init();
-	set_start_position();
+	set_start_position(&current_position);
 	
 	while(1)
 	{

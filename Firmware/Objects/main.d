@@ -13,3 +13,14 @@
 .\objects\main.o: .\UserSource\inc\lcd.h
 .\objects\main.o: .\UserSource\inc\stepmotor.h
 .\objects\main.o: .\UserSource\inc\button.h
+.\objects\main.o: .\FreeRTOS\inc\FreeRTOS.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\main.o: .\UserSource\inc\FreeRTOSConfig.h
+.\objects\main.o: .\FreeRTOS\inc\projdefs.h
+.\objects\main.o: .\FreeRTOS\inc\portable.h
+.\objects\main.o: .\FreeRTOS\inc\deprecated_definitions.h
+.\objects\main.o: .\FreeRTOS\inc\portmacro.h
+.\objects\main.o: .\FreeRTOS\inc\mpu_wrappers.h
+.\objects\main.o: .\FreeRTOS\inc\task.h
+.\objects\main.o: .\FreeRTOS\inc\list.h
+.\objects\main.o: .\FreeRTOS\inc\queue.h

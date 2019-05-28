@@ -2,7 +2,9 @@
 #define __stepmotor_h
 
 #include "stm32f10x.h"
+#include "stdio.h"
 #include "delay_tim4.h"
+#include "lcd.h"
 
 #define FULL_STEP									1
 #define HALF_STEP									2
@@ -26,6 +28,6 @@ void stepmotor_init(void);
 void set_resolution(uint8_t resolution);
 void set_direction(Direction dir);
 void set_step(uint32_t number, Direction direction, uint16_t speed, uint32_t *current_position);
-void set_start_position(void);
+void set_start_position(uint32_t *current_position);
 
 #endif

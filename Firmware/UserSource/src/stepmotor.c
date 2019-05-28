@@ -1,4 +1,5 @@
 #include "stepmotor.h"
+char *str_buff = 0;
 
 uint32_t max_position = 500;
 
@@ -80,7 +81,7 @@ void step(void)
 void set_step(uint32_t number, Direction direction, uint16_t speed, uint32_t *current_position)
 {
 	uint32_t i = 0;
-	if(number < (max_position - *current_position))
+	if(number <= (max_position - *current_position))
 	{
 		enable();
 		set_direction(direction);
@@ -89,25 +90,30 @@ void set_step(uint32_t number, Direction direction, uint16_t speed, uint32_t *cu
 			step();
 			delay_ms(speed);
 		}
+	} else if(number <= *current_position)
+	{
+		lcd_setpos(5, 1);
+		lcd_string("Error!");
 	}
+	
 	if(direction == CCW)
 	{
-		current_position += number;
+		current_position = current_position + number;
 	}
 	else if((direction == CW) && (current_position - number > 0))
 	{
-		current_position -= number;
+		current_position = current_position - number;
 	}
-	//disable();
 }
 
-void set_start_position(void)
+void set_start_position(uint32_t *current_position)
 {
-	set_direction(CW);
+	/*set_direction(CW);
 	set_resolution(0x48);
 	while((GPIOB->IDR & GPIO_IDR_IDR6) != 0)
 	{
 		step();
 		delay_ms(1);
-	}
+	}*/
+	*current_position = 0;
 }
