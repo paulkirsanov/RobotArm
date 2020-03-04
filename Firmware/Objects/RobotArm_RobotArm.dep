@@ -1,207 +1,86 @@
 Dependencies for Project 'RobotArm', Target 'RobotArm': (DO NOT MODIFY !)
-F (.\CMSIS\src\core_cm3.c)(0x4C0C9ECE)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\core_cm3.o --omf_browse .\objects\core_cm3.crf --depend .\objects\core_cm3.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
-F (.\CMSIS\src\system_stm32f10x.c)(0x4D7874F0)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
+F (.\CMSIS\src\core_cm3.c)(0x4C0C9ECE)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc-I.\RTE\_RobotArm-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\core_cm3.o --omf_browse .\objects\core_cm3.crf --depend .\objects\core_cm3.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
+F (.\CMSIS\src\system_stm32f10x.c)(0x4D7874F0)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc-I.\RTE\_RobotArm-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
-F (.\Startup\startup_stm32f10x_md.s)(0x4D787512)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 520" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o .\objects\startup_stm32f10x_md.o --depend .\objects\startup_stm32f10x_md.d)
-F (.\UserSource\src\button.c)(0x5CAEF71A)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\button.o --omf_browse .\objects\button.crf --depend .\objects\button.d)
+F (.\Startup\startup_stm32f10x_md.s)(0x4D787512)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_RobotArm-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 528" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o .\objects\startup_stm32f10x_md.o --depend .\objects\startup_stm32f10x_md.d)
+F (.\UserSource\src\button.c)(0x5CAEF71A)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc-I.\RTE\_RobotArm-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\button.o --omf_browse .\objects\button.crf --depend .\objects\button.d)
 I (.\UserSource\inc\button.h)(0x5CA2F83E)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
-F (.\UserSource\src\delay_tim4.c)(0x5CC44482)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\delay_tim4.o --omf_browse .\objects\delay_tim4.crf --depend .\objects\delay_tim4.d)
+F (.\UserSource\src\delay_tim4.c)(0x5CC44482)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc-I.\RTE\_RobotArm-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\delay_tim4.o --omf_browse .\objects\delay_tim4.crf --depend .\objects\delay_tim4.d)
 I (.\UserSource\inc\delay_tim4.h)(0x58F7232E)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
-F (.\UserSource\src\i2c.c)(0x5CE644A1)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
+F (.\UserSource\src\i2c.c)(0x5CE644A1)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc-I.\RTE\_RobotArm-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
 I (.\UserSource\inc\i2c.h)(0x5C921B6D)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
-F (.\UserSource\src\lcd.c)(0x5CE3DCBE)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\lcd.o --omf_browse .\objects\lcd.crf --depend .\objects\lcd.d)
+F (.\UserSource\src\lcd.c)(0x5CE3DCBE)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc-I.\RTE\_RobotArm-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\lcd.o --omf_browse .\objects\lcd.crf --depend .\objects\lcd.d)
 I (.\UserSource\inc\lcd.h)(0x5CE3DCB8)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 I (.\UserSource\inc\i2c.h)(0x5C921B6D)
 I (.\UserSource\inc\delay_tim4.h)(0x58F7232E)
-F (.\UserSource\src\led.c)(0x5CA1E9A9)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+F (.\UserSource\src\led.c)(0x5CA1E9A9)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc-I.\RTE\_RobotArm-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
 I (.\UserSource\inc\led.h)(0x5A059EFB)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 I (.\UserSource\inc\delay_tim4.h)(0x58F7232E)
-F (.\UserSource\src\main.c)(0x5CEBCF51)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (.\UserSource\inc\main.h)(0x5CEBD6A3)
+F (.\UserSource\src\main.c)(0x5DC94B16)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc-I.\RTE\_RobotArm-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\UserSource\inc\main.h)(0x5CEE2732)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE892E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEBC032)
 I (.\UserSource\inc\delay_tim4.h)(0x58F7232E)
 I (.\UserSource\inc\led.h)(0x5A059EFB)
-I (.\UserSource\inc\usart.h)(0x5C89EB87)
+I (.\UserSource\inc\usart.h)(0x5DC94B7F)
 I (.\UserSource\inc\timer.h)(0x5CC437F6)
 I (.\UserSource\inc\i2c.h)(0x5C921B6D)
 I (.\UserSource\inc\lcd.h)(0x5CE3DCB8)
 I (.\UserSource\inc\stepmotor.h)(0x5CE686F2)
 I (.\UserSource\inc\button.h)(0x5CA2F83E)
-I (.\FreeRTOS\inc\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE892E)
-I (.\UserSource\inc\FreeRTOSConfig.h)(0x573F3A14)
-I (.\FreeRTOS\inc\projdefs.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portable.h)(0x573F3A16)
-I (.\FreeRTOS\inc\deprecated_definitions.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portmacro.h)(0x573F3A17)
-I (.\FreeRTOS\inc\mpu_wrappers.h)(0x573F3A16)
-I (.\FreeRTOS\inc\task.h)(0x573F3A16)
-I (.\FreeRTOS\inc\list.h)(0x573F3A16)
-I (.\FreeRTOS\inc\queue.h)(0x573F3A16)
-F (.\UserSource\src\spi.c)(0x5C8B66D6)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
+F (.\UserSource\src\spi.c)(0x5C8B66D6)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc-I.\RTE\_RobotArm-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
 I (.\UserSource\inc\spi.h)(0x5C8B6986)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
-F (.\UserSource\src\stepmotor.c)(0x5CE689B5)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\stepmotor.o --omf_browse .\objects\stepmotor.crf --depend .\objects\stepmotor.d)
+F (.\UserSource\src\stepmotor.c)(0x5D6E4B2C)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc-I.\RTE\_RobotArm-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\stepmotor.o --omf_browse .\objects\stepmotor.crf --depend .\objects\stepmotor.d)
 I (.\UserSource\inc\stepmotor.h)(0x5CE686F2)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x56FE892E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEBC032)
 I (.\UserSource\inc\delay_tim4.h)(0x58F7232E)
 I (.\UserSource\inc\lcd.h)(0x5CE3DCB8)
 I (.\UserSource\inc\i2c.h)(0x5C921B6D)
-F (.\UserSource\src\timer.c)(0x5CD277DB)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
+F (.\UserSource\src\timer.c)(0x5CD277DB)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc-I.\RTE\_RobotArm-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
 I (.\UserSource\inc\timer.h)(0x5CC437F6)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
-F (.\UserSource\src\usart.c)(0x5CD92614)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
-I (.\UserSource\inc\usart.h)(0x5C89EB87)
+F (.\UserSource\src\usart.c)(0x5DC94B5E)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc-I.\RTE\_RobotArm-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
+I (.\UserSource\inc\usart.h)(0x5DC94B7F)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
-F (.\FreeRTOS\src\croutine.c)(0x573F3A16)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\croutine.o --omf_browse .\objects\croutine.crf --depend .\objects\croutine.d)
-I (.\FreeRTOS\inc\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE892E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
-I (.\UserSource\inc\FreeRTOSConfig.h)(0x573F3A14)
-I (.\FreeRTOS\inc\projdefs.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portable.h)(0x573F3A16)
-I (.\FreeRTOS\inc\deprecated_definitions.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portmacro.h)(0x573F3A17)
-I (.\FreeRTOS\inc\mpu_wrappers.h)(0x573F3A16)
-I (.\FreeRTOS\inc\task.h)(0x573F3A16)
-I (.\FreeRTOS\inc\list.h)(0x573F3A16)
-I (.\FreeRTOS\inc\croutine.h)(0x573F3A16)
-F (.\FreeRTOS\src\event_groups.c)(0x573F3A16)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\event_groups.o --omf_browse .\objects\event_groups.crf --depend .\objects\event_groups.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE892E)
-I (.\FreeRTOS\inc\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE892E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
-I (.\UserSource\inc\FreeRTOSConfig.h)(0x573F3A14)
-I (.\FreeRTOS\inc\projdefs.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portable.h)(0x573F3A16)
-I (.\FreeRTOS\inc\deprecated_definitions.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portmacro.h)(0x573F3A17)
-I (.\FreeRTOS\inc\mpu_wrappers.h)(0x573F3A16)
-I (.\FreeRTOS\inc\task.h)(0x573F3A16)
-I (.\FreeRTOS\inc\list.h)(0x573F3A16)
-I (.\FreeRTOS\inc\timers.h)(0x573F3A16)
-I (.\FreeRTOS\inc\event_groups.h)(0x573F3A16)
-F (.\FreeRTOS\src\heap_1.c)(0x573F3A16)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\heap_1.o --omf_browse .\objects\heap_1.crf --depend .\objects\heap_1.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE892E)
-I (.\FreeRTOS\inc\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE892E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
-I (.\UserSource\inc\FreeRTOSConfig.h)(0x573F3A14)
-I (.\FreeRTOS\inc\projdefs.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portable.h)(0x573F3A16)
-I (.\FreeRTOS\inc\deprecated_definitions.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portmacro.h)(0x573F3A17)
-I (.\FreeRTOS\inc\mpu_wrappers.h)(0x573F3A16)
-I (.\FreeRTOS\inc\task.h)(0x573F3A16)
-I (.\FreeRTOS\inc\list.h)(0x573F3A16)
-F (.\FreeRTOS\src\list.c)(0x573F3A16)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\list.o --omf_browse .\objects\list.crf --depend .\objects\list.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE892E)
-I (.\FreeRTOS\inc\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE892E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
-I (.\UserSource\inc\FreeRTOSConfig.h)(0x573F3A14)
-I (.\FreeRTOS\inc\projdefs.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portable.h)(0x573F3A16)
-I (.\FreeRTOS\inc\deprecated_definitions.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portmacro.h)(0x573F3A17)
-I (.\FreeRTOS\inc\mpu_wrappers.h)(0x573F3A16)
-I (.\FreeRTOS\inc\list.h)(0x573F3A16)
-F (.\FreeRTOS\src\port.c)(0x573F3A17)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
-I (.\FreeRTOS\inc\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE892E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
-I (.\UserSource\inc\FreeRTOSConfig.h)(0x573F3A14)
-I (.\FreeRTOS\inc\projdefs.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portable.h)(0x573F3A16)
-I (.\FreeRTOS\inc\deprecated_definitions.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portmacro.h)(0x573F3A17)
-I (.\FreeRTOS\inc\mpu_wrappers.h)(0x573F3A16)
-I (.\FreeRTOS\inc\task.h)(0x573F3A16)
-I (.\FreeRTOS\inc\list.h)(0x573F3A16)
-F (.\FreeRTOS\src\queue.c)(0x573F3A17)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\queue.o --omf_browse .\objects\queue.crf --depend .\objects\queue.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE892E)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE892E)
-I (.\FreeRTOS\inc\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE892E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
-I (.\UserSource\inc\FreeRTOSConfig.h)(0x573F3A14)
-I (.\FreeRTOS\inc\projdefs.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portable.h)(0x573F3A16)
-I (.\FreeRTOS\inc\deprecated_definitions.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portmacro.h)(0x573F3A17)
-I (.\FreeRTOS\inc\mpu_wrappers.h)(0x573F3A16)
-I (.\FreeRTOS\inc\task.h)(0x573F3A16)
-I (.\FreeRTOS\inc\list.h)(0x573F3A16)
-I (.\FreeRTOS\inc\queue.h)(0x573F3A16)
-F (.\FreeRTOS\src\tasks.c)(0x573F3A17)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\tasks.o --omf_browse .\objects\tasks.crf --depend .\objects\tasks.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE892E)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x56FE892E)
-I (.\FreeRTOS\inc\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE892E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
-I (.\UserSource\inc\FreeRTOSConfig.h)(0x573F3A14)
-I (.\FreeRTOS\inc\projdefs.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portable.h)(0x573F3A16)
-I (.\FreeRTOS\inc\deprecated_definitions.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portmacro.h)(0x573F3A17)
-I (.\FreeRTOS\inc\mpu_wrappers.h)(0x573F3A16)
-I (.\FreeRTOS\inc\task.h)(0x573F3A16)
-I (.\FreeRTOS\inc\list.h)(0x573F3A16)
-I (.\FreeRTOS\inc\timers.h)(0x573F3A16)
-I (.\FreeRTOS\inc\StackMacros.h)(0x573F3A16)
-F (.\FreeRTOS\src\timers.c)(0x573F3A17)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\Firmware -I .\CMSIS -I .\CMSIS\inc -I .\CMSIS\src -I .\Startup -I .\UserSource -I .\UserSource\inc -I ..\Firmware -I .\FreeRTOS\inc-I D:\Work\Personal\Personal\RobotArm\Firmware\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="520" -DSTM32F10X_MD-o .\objects\timers.o --omf_browse .\objects\timers.crf --depend .\objects\timers.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x56FE892E)
-I (.\FreeRTOS\inc\FreeRTOS.h)(0x573F3A16)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x56FE892E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x56FE892E)
-I (.\UserSource\inc\FreeRTOSConfig.h)(0x573F3A14)
-I (.\FreeRTOS\inc\projdefs.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portable.h)(0x573F3A16)
-I (.\FreeRTOS\inc\deprecated_definitions.h)(0x573F3A16)
-I (.\FreeRTOS\inc\portmacro.h)(0x573F3A17)
-I (.\FreeRTOS\inc\mpu_wrappers.h)(0x573F3A16)
-I (.\FreeRTOS\inc\task.h)(0x573F3A16)
-I (.\FreeRTOS\inc\list.h)(0x573F3A16)
-I (.\FreeRTOS\inc\queue.h)(0x573F3A16)
-I (.\FreeRTOS\inc\timers.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEBC032)

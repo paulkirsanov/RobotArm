@@ -18,12 +18,12 @@ uint32_t current_position = 0;
 
 void RCC_Init(void);
 
-void USART2_IRQHandler(void)
+void USART1_IRQHandler(void)
 {
-	if(USART2->SR & USART_SR_RXNE)
+	if(USART1->SR & USART_SR_RXNE)
 	{
-		USART2->SR &= ~USART_SR_RXNE;
-		buffer_rx[rx_index++] = USART2->DR;
+		USART1->SR &= ~USART_SR_RXNE;
+		buffer_rx[rx_index++] = USART1->DR;
 		
 		if(rx_index == RX_BUFFER_SIZE)
 		{
@@ -31,16 +31,16 @@ void USART2_IRQHandler(void)
 		}
 	}
 	
-	if(USART2->SR & USART_SR_IDLE){}
+	if(USART1->SR & USART_SR_IDLE){}
 	
-	if(USART2->SR & USART_SR_TXE)
+	if(USART1->SR & USART_SR_TXE)
 	{
-		USART2->SR &= ~USART_SR_TXE;
+		USART1->SR &= ~USART_SR_TXE;
 	}
 	
-	if(USART2->SR & USART_SR_TC)
+	if(USART1->SR & USART_SR_TC)
 	{
-		USART2->SR &= ~USART_SR_TC;
+		USART1->SR &= ~USART_SR_TC;
 	}
 }
 
@@ -131,18 +131,18 @@ int main(void)
 	delay_tim4_init();
 	led_init();
 	
-	i2c2_init();
+	/*i2c2_init();
 	lcd_init();
 	lcd_clear();
 	lcd_setpos(0, 0);
-	lcd_string("stm32");
+	lcd_string("Status: ");*/
 	button_init();
-	usart2_init();
+	usart1_init();
 	timer2_init();
 	timer3_init();
 
 	stepmotor_init();
-	set_start_position(&current_position);
+//	set_start_position(&current_position);
 	
 	while(1)
 	{

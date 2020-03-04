@@ -12,10 +12,6 @@
 #include "stepmotor.h"
 #include "button.h"
 
-#include "FreeRTOS.h"
-#include "task.h"
-#include "queue.h"
-
 #define 	RX_BUFFER_SIZE	8
 
 #endif
